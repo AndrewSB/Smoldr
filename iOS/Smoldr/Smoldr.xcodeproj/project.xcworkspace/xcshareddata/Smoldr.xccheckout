@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E2D54338-D639-417F-AFA6-FB24F4666B3A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Smoldr</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B7CC71A459B472E9BB13C264C977C1C0195239BB</key>
+		<string>https://github.com/Gibolt/Smoldr.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/Smoldr/Smoldr.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B7CC71A459B472E9BB13C264C977C1C0195239BB</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Gibolt/Smoldr.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B7CC71A459B472E9BB13C264C977C1C0195239BB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B7CC71A459B472E9BB13C264C977C1C0195239BB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Smoldr</string>
+		</dict>
+	</array>
+</dict>
+</plist>
