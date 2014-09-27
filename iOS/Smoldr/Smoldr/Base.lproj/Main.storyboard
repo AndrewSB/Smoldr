@@ -291,7 +291,7 @@
         <!--Family-->
         <scene sceneID="iTq-rQ-Jo9">
             <objects>
-                <tableViewController title="Family" id="Pdh-4N-uK6" sceneMemberID="viewController">
+                <tableViewController title="Family" id="Pdh-4N-uK6" customClass="FamilyMembersViewController" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4YG-V3-5Kf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -326,12 +326,37 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Family" id="EP3-gL-Bxy">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="BYS-Ka-sUz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="BYS-Ka-sUz">
+                            <connections>
+                                <action selector="addFamilyMemberButtonPressed:" destination="Pdh-4N-uK6" id="6Lr-UJ-Yex"/>
+                                <segue destination="Xff-Wf-LL2" kind="popoverPresentation" popoverAnchorBarButtonItem="BYS-Ka-sUz" id="uvs-xH-6cf">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YdL-Yc-x1F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2643" y="1050"/>
+        </scene>
+        <!--Add Family Member-->
+        <scene sceneID="qyv-Eo-yyt">
+            <objects>
+                <viewController title="Add Family Member" id="Xff-Wf-LL2" userLabel="Add Family Member" customClass="ABPeoplePickerNavigationController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rr2-T4-49t"/>
+                        <viewControllerLayoutGuide type="bottom" id="sxd-b6-0mM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lG9-gM-AgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pp2-Fl-7fa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3350" y="1050"/>
         </scene>
         <!--Smoldr-->
         <scene sceneID="1ki-kf-ztk">

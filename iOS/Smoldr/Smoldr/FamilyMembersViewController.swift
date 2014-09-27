@@ -7,6 +7,18 @@
 //
 
 import Foundation
-import AddressBook
+import UIKit
+import AddressBookUI
 
-
+class FamilyMembersViewController: UITableViewController, ABPeoplePickerNavigationControllerDelegate {
+	
+	init() {
+		super.init()
+	}
+	
+	@IBAction func addFamilyMemberButtonPressed(sender: AnyObject) {
+		var peoplePickerVC = ABPeoplePickerNavigationController(
+		peoplePickerVC.delegate = self
+		
+	}
+}
