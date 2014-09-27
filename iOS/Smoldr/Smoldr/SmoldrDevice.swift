@@ -27,7 +27,9 @@ class SmoldrDevice {
 	let name: String
 	let sensors: [Sensor]
 	var status: Status {
-		didSet
+		didSet(setStatus) {
+			//TODO:
+		}
 	}
 	
 	init(serialNumber: UInt, sensors: [Sensor], status: Status = .Nominal, name: String = "") {

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="B6Y-4r-ZdS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="B6Y-4r-ZdS">
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
-        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Smoldr-->
         <scene sceneID="zIU-dz-qed">
             <objects>
                 <navigationController title="Smoldr" id="vkG-n4-v08" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Smoke Alarms" image="second" id="LJP-Ve-k57"/>
+                    <tabBarItem key="tabBarItem" title="Smoke Alarms" image="smokeAlarms" selectedImage="smokeAlarms" id="LJP-Ve-k57"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qqg-N8-OEz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -441,6 +441,6 @@
     <resources>
         <image name="flame" width="30" height="30"/>
         <image name="gear" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="smokeAlarms" width="20" height="60"/>
     </resources>
 </document>

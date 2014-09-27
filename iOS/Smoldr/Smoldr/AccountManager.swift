@@ -12,22 +12,22 @@ class AccountManager {
 	
 	let accountNumber: Int
 	let email: String
+	var devices: [SmoldrDevice]
 	
-	init () {
-		accountNumber = -1
-		email = ""
+	convenience init () {
+		self.init(accountNumber: -1, emailAddress: "")
 	}
 	
-	init(accountNumber: Int, emailAddress: String?) {
-		
+	init(accountNumber: Int, emailAddress: String = "") {
+		self.accountNumber = accountNumber
+		self.email = emailAddress
+		devices = [SmoldrDevice]()
 	}
+	
 	
 	//TODO:
-	func validateLoginName(username: String, _ password: String) -> Bool {
-		
+	func validateLoginName(username: String, password: String) -> Bool {
+		return true
 	}
-	
-	//TODO:
-	func getDetectors() -> [(name: String, )]
 	
 }
