@@ -8,9 +8,7 @@
 
 import UIKit
 
-class LoginSignupViewController: UIViewController {
-    
-    
+class LoginSignupViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var usernameField: UITextField!
     @IBOutlet var loginButton: UIButton!
@@ -24,6 +22,9 @@ class LoginSignupViewController: UIViewController {
     //MARK: View Controller LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+		usernameField.delegate = self
+		passwordField.delegate = self
         
         usernameField.alpha = 0;
         passwordField.alpha = 0;
@@ -95,6 +96,22 @@ class LoginSignupViewController: UIViewController {
             self.loginButton(true)
         }
     }
+	
+	func textFieldShouldReturn(textField: UITextField) -> Bool {
+		switch textField {
+		case usernameField:
+			// move the keyboard to the password field
+			passwordField.becomeFirstResponder()
+		case passwordField:
+			if loginButton.enabled {
+				buttonPressed(loginButton)
+			}
+		default:
+			// do nothing
+			break
+		}
+		return false	// don't insert newlines
+	}
 
     
     @IBAction func buttonPressed(sender: AnyObject) {

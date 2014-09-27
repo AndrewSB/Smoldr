@@ -379,7 +379,7 @@
                                 <color key="tintColor" red="0.25490197539999998" green="0.81176477670000002" blue="0.1411764771" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="47" y="127" width="226" height="30"/>
                                 </variation>
@@ -390,7 +390,7 @@
                                 <color key="tintColor" red="0.25490197539999998" green="0.81176477670000002" blue="0.1411764771" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="47" y="172" width="226" height="30"/>
                                 </variation>
@@ -441,6 +441,6 @@
     <resources>
         <image name="flame" width="30" height="30"/>
         <image name="gear" width="30" height="30"/>
-        <image name="smokeAlarms" width="20" height="60"/>
+        <image name="smokeAlarms" width="11" height="32"/>
     </resources>
 </document>

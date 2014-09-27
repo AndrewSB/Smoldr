@@ -25,18 +25,24 @@ class SmoldrDevice {
 	
 	let serialNumber: UInt
 	let name: String
+	let room: String
 	let sensors: [Sensor]
 	var status: Status {
 		didSet(setStatus) {
-			//TODO:
+			//TODO: do something when the status changes from nominal
 		}
 	}
 	
-	init(serialNumber: UInt, sensors: [Sensor], status: Status = .Nominal, name: String = "") {
+	init(serialNumber: UInt, sensors: [Sensor], status: Status = .Nominal, name: String = "", room: String?) {
 		self.serialNumber = serialNumber
 		self.sensors = sensors
 		self.status = status
 		self.name = name
+		if let theRoom = room {
+			self.room = theRoom
+		} else {
+			self.room = ""
+		}
 	}
 	
 }
