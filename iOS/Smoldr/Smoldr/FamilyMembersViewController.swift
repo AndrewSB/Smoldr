@@ -12,13 +12,26 @@ import AddressBookUI
 
 class FamilyMembersViewController: UITableViewController, ABPeoplePickerNavigationControllerDelegate {
 	
-	init() {
+	override init() {
 		super.init()
+	}
+
+	required init(coder aDecoder: NSCoder) {
+	    fatalError("init(coder:) has not been implemented")
 	}
 	
 	@IBAction func addFamilyMemberButtonPressed(sender: AnyObject) {
-		var peoplePickerVC = ABPeoplePickerNavigationController(
-		peoplePickerVC.delegate = self
-		
+		var peoplePickerVC = ABPeoplePickerNavigationController()
+		peoplePickerVC.peoplePickerDelegate = self
+		presentViewController(peoplePickerVC, animated: true, completion: nil)
+	}
+	
+	// MARK: ABPeoplePickerNavigationControllerDelegate methods
+	
+	func peoplePickerNavigationController(peoplePicker: ABPeoplePickerNavigationController!, didSelectPerson person: ABRecord!) {
+		let unretainedValue: Unmanaged<CFString>! = ABRecordCopyCompositeName(person)
+		let retainedValue: CFString = unretainedValue.takeRetainedValue()
+		let contactName: String = retainedValue as String
+		//TODO: create a UITableViewCell with the contactName
 	}
 }
