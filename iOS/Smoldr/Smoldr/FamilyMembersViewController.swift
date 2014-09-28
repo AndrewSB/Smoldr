@@ -31,7 +31,7 @@ class FamilyMembersViewController: UITableViewController, ABPeoplePickerNavigati
 	func peoplePickerNavigationController(peoplePicker: ABPeoplePickerNavigationController!, didSelectPerson person: ABRecord!) {
 		let unretainedValue: Unmanaged<CFString>! = ABRecordCopyCompositeName(person)
 		let retainedValue: CFString = unretainedValue.takeRetainedValue()
-		let contactName: String = retainedValue as String
+//		let contactName: String = retainedValue as String
 		//TODO: create a UITableViewCell with the contactName
 	}
 }

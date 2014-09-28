@@ -21,6 +21,7 @@
 		465A501F19BBC2AE003A4C38 /* VolcanoUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A501E19BBC2AE003A4C38 /* VolcanoUITableViewCell.swift */; };
 		465A502119BBC2BB003A4C38 /* HistoryUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A502019BBC2BB003A4C38 /* HistoryUITableViewCell.swift */; };
 		B83E551119D73F9100E9CF3B /* FamilyMembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E551019D73F9100E9CF3B /* FamilyMembersViewController.swift */; };
+		B8BA6C0A19D7B0C200D07558 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BA6C0919D7B0C200D07558 /* EmergencyViewController.swift */; };
 		B8D15F4A19D7200700C2158D /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D15F4919D7200700C2158D /* AccountManager.swift */; };
 		B8D15F4C19D7201A00C2158D /* SmoldrDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D15F4B19D7201A00C2158D /* SmoldrDevice.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		465A501E19BBC2AE003A4C38 /* VolcanoUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolcanoUITableViewCell.swift; sourceTree = "<group>"; };
 		465A502019BBC2BB003A4C38 /* HistoryUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryUITableViewCell.swift; sourceTree = "<group>"; };
 		B83E551019D73F9100E9CF3B /* FamilyMembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMembersViewController.swift; sourceTree = "<group>"; };
+		B8BA6C0919D7B0C200D07558 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		B8D15F4919D7200700C2158D /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		B8D15F4B19D7201A00C2158D /* SmoldrDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoldrDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 				B83E551019D73F9100E9CF3B /* FamilyMembersViewController.swift */,
 				B8D15F4B19D7201A00C2158D /* SmoldrDevice.swift */,
 				465A500319BBC25B003A4C38 /* Main.storyboard */,
+				B8BA6C0919D7B0C200D07558 /* EmergencyViewController.swift */,
 				465A500619BBC25B003A4C38 /* Images.xcassets */,
 				465A4FFB19BBC25B003A4C38 /* Supporting Files */,
 			);
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8BA6C0A19D7B0C200D07558 /* EmergencyViewController.swift in Sources */,
 				465A502119BBC2BB003A4C38 /* HistoryUITableViewCell.swift in Sources */,
 				465A501F19BBC2AE003A4C38 /* VolcanoUITableViewCell.swift in Sources */,
 				465A500219BBC25B003A4C38 /* SecondViewController.swift in Sources */,
