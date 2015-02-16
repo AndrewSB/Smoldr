@@ -16,13 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
 //        var vc = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("loginSignupVC") as UIViewController
-		var vc = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("emergencyVC") as UIViewController
+//		var vc = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("emergencyVC") as UIViewController
 		
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         // Override point for customization after application launch.
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isLoggedIn")
         
-        self.window.rootViewController = vc;
+//        self.window.rootViewController = vc;
         return true
     }
 

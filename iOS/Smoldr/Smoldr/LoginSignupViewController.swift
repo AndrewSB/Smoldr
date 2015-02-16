@@ -116,7 +116,7 @@ class LoginSignupViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         let url = NSURL(string: "https://web.engr.illinois.edu/login.php?email=\(usernameField.text)&password=\(passwordField.text)")
-        var request = NSMutableURLRequest(URL: url)
+        var request = NSMutableURLRequest(URL: url!)
 
         self.performSegueWithIdentifier("login", sender: self)
     }
